@@ -52,6 +52,12 @@ app.get('/about',(req, res) => {
 	});
 });
 
+app.get('/projects',(req, res) => {
+	res.render('project.hbs',{
+		message: 'This is my projects',
+	});
+});
+
 //create a route /bad send back json with errorMessage property
 
 app.get('/bad',(req,res) => {
